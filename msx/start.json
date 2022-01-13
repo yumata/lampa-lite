@@ -20,14 +20,14 @@
           "type": "control",
           "layout": "0,0,5,1",
           "image": "http://{domain}/msx-logo.png",
-          "label": "Lampa",
+          "label": "Lampa Lite",
           "action": "link:http://{domain}",
           "selection": {
             "important": true,
             "action": "update:content:description",
             "data": {
               "text": [
-                "{txt:msx-white: Lampa} — Просмотр популярных фильмов, новинок, топ и т.д"
+                "{txt:msx-white: Lampa Lite} — Просмотр популярных фильмов, новинок, топ и т.д"
               ]
             }
           }
