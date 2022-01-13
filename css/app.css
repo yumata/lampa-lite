@@ -1227,7 +1227,7 @@ body.selectbox--open .selectbox__content {
 }
 
 .info {
-  height: 10em;
+  height: 8em;
   padding: 2em 1.5em;
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
@@ -1248,56 +1248,6 @@ body.selectbox--open .selectbox__content {
 .info__title-original {
   font-size: 1.8em;
   margin-top: 0.4em;
-}
-.info__right {
-  -webkit-flex-shrink: 0;
-      -ms-flex-negative: 0;
-          flex-shrink: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 1em;
-}
-.info__create {
-  font-size: 1.2em;
-  margin-top: 1em;
-}
-.info__icon {
-  -webkit-flex-shrink: 0;
-      -ms-flex-negative: 0;
-          flex-shrink: 0;
-  margin-left: 1em;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  -webkit-background-size: 50% 50%;
-     -moz-background-size: 50%;
-       -o-background-size: 50%;
-          background-size: 50%;
-  position: relative;
-  width: 4em;
-  height: 4em;
-  -webkit-border-radius: 100%;
-     -moz-border-radius: 100%;
-          border-radius: 100%;
-}
-.info__icon.active {
-  background-color: #d81f26;
-}
-.info__icon.icon--book {
-  background-image: url(../img/icons/menu/bookmark.svg);
-}
-.info__icon.icon--like {
-  background-image: url(../img/icons/menu/like.svg);
-}
-.info__icon.icon--wath {
-  background-image: url(../img/icons/menu/time.svg);
-}
-.info__icon.focus {
-  -webkit-box-shadow: 0 0 0 0.3em #fff;
-     -moz-box-shadow: 0 0 0 0.3em #fff;
-          box-shadow: 0 0 0 0.3em #fff;
 }
 
 .card-more {
