@@ -318,10 +318,6 @@ ul {
   position: fixed;
   top: 0;
   right: -100%;
-  -webkit-transition: right 0.3s;
-  -o-transition: right 0.3s;
-  -moz-transition: right 0.3s;
-  transition: right 0.3s;
   background: #2d2f38;
   width: 35%;
   display: -webkit-box;
@@ -370,10 +366,6 @@ ul {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transition: background-color 0.3s;
-  -o-transition: background-color 0.3s;
-  -moz-transition: background-color 0.3s;
-  transition: background-color 0.3s;
 }
 .settings-folder__icon {
   -webkit-flex-shrink: 0;
@@ -397,10 +389,6 @@ ul {
 }
 .settings-param {
   padding: 1.5em 2em;
-  -webkit-transition: background-color 0.3s;
-  -o-transition: background-color 0.3s;
-  -moz-transition: background-color 0.3s;
-  transition: background-color 0.3s;
   position: relative;
 }
 .settings-param__name {
@@ -1359,6 +1347,20 @@ body.selectbox--open .selectbox__content {
   margin: 0 0.75em;
   width: 17.8%;
   float: left;
+}
+.category-full__more {
+  text-align: center;
+  padding: 2em;
+  margin: 0.9em;
+  clear: both;
+  background-color: #3b3d48;
+  border: 0.3em solid transparent;
+}
+.category-full__more > span {
+  font-size: 1.2em;
+}
+.category-full__more.focus {
+  border-color: #D81F26;
 }
 .category-full:after {
   content: "";
