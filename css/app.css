@@ -1191,10 +1191,6 @@ body.selectbox--open .selectbox__content {
 
 .selectbox-item {
   padding: 1.5em 2em;
-  -webkit-transition: background-color 0.3s;
-  -o-transition: background-color 0.3s;
-  -moz-transition: background-color 0.3s;
-  transition: background-color 0.3s;
   position: relative;
 }
 .selectbox-item__title {
