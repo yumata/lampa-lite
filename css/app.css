@@ -600,13 +600,17 @@ body.settings--open .settings__content {
   background-color: #3E3E3E;
 }
 .card__view {
-  margin-bottom: 1em;
-  padding-bottom: 146%;
+  margin-bottom: 0.5em;
+  padding-bottom: 140%;
   position: relative;
 }
 .card__title {
   font-size: 1.2em;
   height: 3.1em;
+}
+.card__title span {
+  display: block;
+  height: 2em;
   overflow: hidden;
 }
 .card__icons {
@@ -1227,7 +1231,7 @@ body.selectbox--open .selectbox__content {
 }
 
 .info {
-  height: 8em;
+  height: 6em;
   padding: 2em 1.5em;
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
@@ -1237,7 +1241,7 @@ body.selectbox--open .selectbox__content {
   padding-top: 1em;
 }
 .info__title {
-  font-size: 3.1em;
+  font-size: 2.5em;
   font-weight: 700;
   line-height: 1.2;
   white-space: nowrap;
@@ -1246,7 +1250,7 @@ body.selectbox--open .selectbox__content {
      text-overflow: ellipsis;
 }
 .info__title-original {
-  font-size: 1.8em;
+  font-size: 1.3em;
   margin-top: 0.4em;
 }
 
