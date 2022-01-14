@@ -1287,11 +1287,11 @@ body.selectbox--open .selectbox__content {
 }
 
 .category-full {
-  padding: 0 0.75em;
+  padding: 0;
 }
 .category-full .card {
-  margin: 0 0.75em;
-  width: 17.8%;
+  margin: 0px 1.35em;
+  width: 16%;
   float: left;
 }
 .category-full__more {
