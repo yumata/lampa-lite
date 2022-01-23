@@ -3,10 +3,10 @@
   "headline": "Загрузчик приложений",
   "extension": "Версия MSX: 1.0.0",
   "version": "1.0.0",
-  "parameter": "content:{PREFIX}{SERVER}/msx/start.json",
+  "parameter": "content:http://{domain}/msx/start.json",
   "note": "For this service, Media Station X 0.1.120 or higher is needed",
   "action": "[settings:validate_links:0|home]",
-  "dictionary": "{PREFIX}{SERVER}/msx/lang/ru.json",
+  "dictionary": "http://{domain}/msx/lang/ru.json",
   "pages": [
     {
       "items": [
@@ -19,9 +19,9 @@
         {
           "type": "control",
           "layout": "0,0,5,1",
-          "image": "{PREFIX}{SERVER}/msx-logo.png",
+          "image": "http://{domain}/msx-logo.png",
           "label": "Lampa Lite",
-          "action": "link:{PREFIX}{SERVER}",
+          "action": "link:http://{domain}",
           "selection": {
             "important": true,
             "action": "update:content:description",
