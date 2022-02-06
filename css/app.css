@@ -678,6 +678,9 @@ body.settings--open .settings__content {
   font-weight: 600;
   padding: 0.3em 0.5em;
 }
+.card--collection .card__view {
+  padding-bottom: 57%;
+}
 .card.focus .card__view:after {
   content: "";
   display: block;
@@ -1296,6 +1299,9 @@ body.selectbox--open .selectbox__content {
   margin: 0px 1.35em;
   width: 16%;
   float: left;
+}
+.category-full .card--collection {
+  width: 21%;
 }
 .category-full__more {
   text-align: center;
@@ -2452,6 +2458,14 @@ body.selectbox--open .selectbox__content {
 .videos__plugins {
   padding: 0 1.5em;
   margin-bottom: 2em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 .videos__item {
   width: 18.5%;
