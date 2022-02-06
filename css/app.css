@@ -1669,6 +1669,310 @@ body.selectbox--open .selectbox__content {
   padding: 2em 0;
 }
 
+.torrent-list {
+  padding: 0 1.5em;
+}
+
+.torrent-files .torrent-file + .torrent-file {
+  margin-top: 1em;
+}
+
+.torrent-item {
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 0.3em;
+     -moz-border-radius: 0.3em;
+          border-radius: 0.3em;
+  padding: 1em;
+  line-height: 1.2;
+  position: relative;
+}
+.torrent-item__title {
+  font-size: 1.3em;
+}
+.torrent-item__details {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #929292;
+  margin-top: 0.6em;
+  font-weight: 600;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.torrent-item__date {
+  margin-right: 1em;
+}
+.torrent-item__tracker {
+  margin-right: auto;
+}
+.torrent-item__size {
+  background-color: #fff;
+  -webkit-border-radius: 0.3em;
+     -moz-border-radius: 0.3em;
+          border-radius: 0.3em;
+  color: #000;
+  padding: 0.3em 0.5em;
+}
+.torrent-item__bitrate, .torrent-item__grabs, .torrent-item__seeds {
+  margin-right: 1em;
+}
+.torrent-item__bitrate > span, .torrent-item__grabs > span, .torrent-item__seeds > span {
+  color: #fff;
+}
+.torrent-item__viewed {
+  position: absolute;
+  top: -0.75em;
+  left: -0.75em;
+  -webkit-border-radius: 100%;
+     -moz-border-radius: 100%;
+          border-radius: 100%;
+  width: 1.5em;
+  height: 1.5em;
+  padding: 0.3em;
+  color: #000;
+  background-color: #fff;
+}
+.torrent-item + .torrent-item {
+  margin-top: 1em;
+}
+.torrent-item.focus {
+  -webkit-box-shadow: 0 0 0 0.2em #fff;
+     -moz-box-shadow: 0 0 0 0.2em #fff;
+          box-shadow: 0 0 0 0.2em #fff;
+  margin-left: -0.8em;
+  margin-right: -0.8em;
+  padding: 1em 1.8em;
+}
+.torrent-item.focus .torrent-item__viewed {
+  left: 0.05em;
+}
+
+.torrent-file {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #3d404c;
+  -webkit-border-radius: 0.3em;
+     -moz-border-radius: 0.3em;
+          border-radius: 0.3em;
+  padding: 1em;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.torrent-file__title {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+     -moz-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-size: 1.3em;
+  line-height: 1.2;
+  overflow: hidden;
+  padding-right: 1em;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+}
+.torrent-file__title .exe {
+  -webkit-border-radius: 0.3em;
+     -moz-border-radius: 0.3em;
+          border-radius: 0.3em;
+  background: #2d2f38;
+  padding: 0.2em 0.4em;
+  display: inline-block;
+}
+.torrent-file__size {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  -webkit-border-radius: 0.3em;
+     -moz-border-radius: 0.3em;
+          border-radius: 0.3em;
+  background: #2d2f38;
+  font-size: 1.3em;
+  padding: 0.3em 0.5em;
+}
+.torrent-file .time-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.torrent-file.focus {
+  background-color: #535562;
+}
+
+.torrent-error > div + div {
+  margin-top: 1.3em;
+}
+.torrent-error > div {
+  line-height: 1.2;
+}
+.torrent-error > div > div {
+  font-size: 1.4em;
+}
+.torrent-error > div > ul {
+  margin: 0;
+  margin-top: 0.2em;
+  font-size: 1.2em;
+  font-weight: 300;
+}
+.torrent-error > div > ul > li {
+  position: relative;
+  padding-left: 1em;
+}
+.torrent-error > div > ul > li::before {
+  content: "";
+  display: block;
+  width: 0.3em;
+  height: 0.3em;
+  -webkit-border-radius: 100%;
+     -moz-border-radius: 100%;
+          border-radius: 100%;
+  background-color: #ddd;
+  position: absolute;
+  top: 0.5em;
+  left: 0;
+}
+.torrent-error > div > ul > li + li {
+  margin-top: 0.2em;
+}
+.torrent-error code {
+  background-color: #4c4c4c;
+  -webkit-border-radius: 0.2em;
+     -moz-border-radius: 0.2em;
+          border-radius: 0.2em;
+  padding: 0 0.5em;
+  word-break: break-all;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.error + .torrent-error {
+  margin-top: 2em;
+}
+
+.torrent-filter {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2em;
+}
+
+.torrent-serial {
+  position: relative;
+  -webkit-border-radius: 0.3em;
+     -moz-border-radius: 0.3em;
+          border-radius: 0.3em;
+  background: #1d1f20;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.torrent-serial__img {
+  width: 12em;
+  -webkit-border-radius: 0.3em;
+     -moz-border-radius: 0.3em;
+          border-radius: 0.3em;
+  height: 7em;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+.torrent-serial__content {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+     -moz-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.torrent-serial__title {
+  font-size: 1.9em;
+  max-height: 2em;
+  overflow: hidden;
+}
+.torrent-serial__line {
+  font-size: 1.2em;
+  margin-top: 0.5em;
+  font-weight: 300;
+}
+.torrent-serial__line b {
+  font-weight: 500;
+}
+.torrent-serial__size {
+  -webkit-border-radius: 0.3em;
+     -moz-border-radius: 0.3em;
+          border-radius: 0.3em;
+  background: #262829;
+  font-size: 1.3em;
+  padding: 0.3em 0.5em;
+}
+.torrent-serial__exe {
+  font-size: 1.4em;
+  margin-top: 0.2em;
+}
+.torrent-serial__detail {
+  text-align: right;
+  margin-left: auto;
+  padding-left: 1.5em;
+  white-space: nowrap;
+}
+.torrent-serial__episode {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  left: 0;
+  top: 0;
+  -webkit-border-radius: 0.2em;
+     -moz-border-radius: 0.2em;
+          border-radius: 0.2em;
+  padding: 0.3em 0.5em;
+  font-size: 1.4em;
+  font-weight: 600;
+}
+.torrent-serial.focus {
+  background-color: #353535;
+}
+.torrent-serial + .torrent-serial {
+  margin-top: 1em;
+}
+.torrent-serial .time-line {
+  position: absolute;
+  left: 12em;
+  bottom: 0;
+  right: 0;
+}
+
 .about {
   font-size: 1.4em;
   line-height: 1.3;
@@ -2268,6 +2572,38 @@ body.selectbox--open .selectbox__content {
           justify-content: center;
   margin: 0;
   font-size: 1.5em;
+}
+.videos__torrent {
+  width: 100%;
+  background-color: #393a44;
+  position: relative;
+  margin-bottom: 1.4em;
+}
+.videos__torrent-title {
+  font-size: 1.6em;
+  padding: 15px;
+}
+.videos__torrent .videos__item-title {
+  padding: 11px 15px;
+  background: #75757c47;
+  height: auto;
+  margin: 0;
+}
+.videos__torrent.focus:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 0.3em solid #d81f26;
+}
+.videos__torrent .time-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
 }
 .videos__button {
   background-color: #393A44;
